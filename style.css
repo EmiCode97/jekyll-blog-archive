@@ -138,6 +138,16 @@ section { position: relative; }
   opacity: 0.5;
 } 
 
+
+.bg-yellow {
+  background-color: #FEE2B1;
+}
+
+.bg-cian {
+  background-color: #95DBD9;
+}
+
+
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
 a.bg-image { display: block;}
@@ -245,7 +255,10 @@ p a:hover {
 /* ------------ Header & Hamburger Menu -------------- */
 header {
     padding: 1rem 5%;
+   
 }
+
+
 
 nav a {
     padding: 0.25rem 0.5rem;
