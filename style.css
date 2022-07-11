@@ -1,6 +1,12 @@
 /* ----------- Color Variables --------- */
 /* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
 
+:root {
+ --serif: 'Mulish', serif;
+ --heading: 'Didot', Georgia , serif;
+}
+
+
 /* ----------- CSS RESET --------- */
 
 * {
@@ -173,13 +179,14 @@ a.bg-image { display: block;}
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: 'Mulish', serif;  /* Add your font here */ 
+  font-family: var(--serif); /* Add your font here */ 
   color: var(--dark-text);
 }
 
 h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin-bottom: 1.2rem;
+  font-family: var(--heading);
 }
 
 h2 { font-size: 2rem; }
@@ -191,7 +198,7 @@ h6 { font-size: 1.2rem; }
 p, li {
   line-height: 1.4; 
   margin-bottom: 1rem;
-  font-family: 'Martel', serif; 
+  font-family: var(--serif); 
   font-weight: 200;
   font-size: 1rem;
 }
@@ -265,6 +272,7 @@ nav a {
     display: inline-block;
     text-decoration: none;
 }
+
 nav a:hover {
   color: var(--featured-text);
 }
@@ -416,6 +424,8 @@ nav a:hover {
   display: block;
   font-weight: 300;
 }
+
+
 
 /* Social Share Nav  */
 
